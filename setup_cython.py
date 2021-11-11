@@ -33,4 +33,4 @@ setup(name='UPA',
       ext_modules=cythonize(exts,
                             compiler_directives={'language_level': '3'}
                             ),
-      version="21.6.1")
+      version="21.9.0")
