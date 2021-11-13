@@ -55,8 +55,6 @@ Features of a `Message`:
 
 # Getting Started
 
-------------------------------------------------------------------------
-
 The `UFEed_Python` builds to a compiled Python module in both *.so* (Linux and
 MacOS) and *.pyd* (Windows) format. It has dependencies on the Python
 *pyzmq* and *protobuf* libraries. Within the distributed `UFEed_Python` archive we find the following directory structure (example is Linux / MacOS):
@@ -854,8 +852,6 @@ msg = uc.create_message() \
 assert msg[fix50.ClOrdID.tag] == "123"
 assert msg[fix50.OrderID.tag] is None
 ```
-:::
-:::
 
 # Constants
 
