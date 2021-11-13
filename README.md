@@ -535,8 +535,6 @@ response = uc.request(logout)
 
 # Message
 
-------------------------------------------------------------------------
-
 The `UFEed_Python` can be used to send and receive any System or Business API
 `Message` between itself and the UFEGW. The typical format of a printed
 `Message` is:
