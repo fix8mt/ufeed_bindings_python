@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://www.fix8mt.com"><img src="fix8mt_Master_Logo_Green_Trans.png" width="200"></a>
+</p>
+
 # UFEed Python Binding
 
 -   [Introduction](#introduction)
@@ -259,13 +263,13 @@ nos = uc.create_message()
 nos.name = "D"
 # adds fields by list of tuple pairs
 nos.add_fields([
-    (COMMON_SYMBOL, "BHP"), 
-    (COMMON_CLORDID, "Ord01"), 
-    (COMMON_ORDERQTY, 100.), 
-    (COMMON_PRICE, 10.25), 
-    (COMMON_ORDTYPE, '1'), 
-    (COMMON_SIDE, '0'), 
-    (COMMON_TIMEINFORCE, '2'), 
+    (COMMON_SYMBOL, "BHP"),
+    (COMMON_CLORDID, "Ord01"),
+    (COMMON_ORDERQTY, 100.),
+    (COMMON_PRICE, 10.25),
+    (COMMON_ORDTYPE, '1'),
+    (COMMON_SIDE, '0'),
+    (COMMON_TIMEINFORCE, '2'),
     (COMMON_TRANSACTTIME, "now")])
 response = uc.request(nos)
 ```
@@ -786,7 +790,7 @@ assert msg[1] == 2 and msg[2] = "abc"
 
 The `Message` class provides some wrapping logic around the internal
 WireMessage format utilised by the UFEGW. *Messages* are objects with
-which requests are made from the UPA to the UFEGW. 
+which requests are made from the UPA to the UFEGW.
 
 *Messages* can be created via the `UFEedClient` create_message()
 function (see section 1.5.1 above). For example, a NewOrderSingle
@@ -864,13 +868,13 @@ service_list.add_field(UFE_CMD, UFE_CMD_SERVICE_LIST)
 and
 ```python
 nos.add_fields([
-    (COMMON_SYMBOL, "BHP"), 
-    (COMMON_CLORDID, "Ord01"), 
-    (COMMON_ORDERQTY, 100.), 
-    (COMMON_PRICE, 10.25), 
-    (COMMON_ORDTYPE, '1'), 
-    (COMMON_SIDE, '0'), 
-    (COMMON_TIMEINFORCE, '2'), 
+    (COMMON_SYMBOL, "BHP"),
+    (COMMON_CLORDID, "Ord01"),
+    (COMMON_ORDERQTY, 100.),
+    (COMMON_PRICE, 10.25),
+    (COMMON_ORDTYPE, '1'),
+    (COMMON_SIDE, '0'),
+    (COMMON_TIMEINFORCE, '2'),
     (COMMON_TRANSACTTIME, "now")])
 ```
 A full list of these constants is available at `consts.py`.
